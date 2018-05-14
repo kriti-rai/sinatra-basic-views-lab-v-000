@@ -5,15 +5,10 @@
     </head>
     <body>
 
-        <h1> Buster's Best Bowling Alley</h1>
-        <h2> Bet You Can't Bowl A Strike Every Time</h2>
-        <p> 97 Bowling Alley Lane, Boulder CO </p>
-        <p><%= 1+1 %></p>
-        <p><%= "I love" + " Ruby" %></p>
-        <% if 1 == 2 %>
-          <p>1 equals 2.</p>
-        <% else %>
-          <p>1 does not equal 2.</p>
-        <% end %>
+        <% wall_posts = ["First post!", "Second Post!", "Hello, it's your mother"] %>
+        <ul>
+          <% wall_posts.each do |post| %>
+          <li><%= post%></li>
+          <% end%>
     </body>
 </html>
